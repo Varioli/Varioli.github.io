@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Portfolio</title>
+        <link href="proStyle.css" rel="stylesheet" type="text/css"/>
+        <script src="action.js"></script>
+    </head>
+
+
+    <header>
+        <table id="menu">
+            <th>
+            <button type="button" onmouseover="changeColor(this)" onmouseleave="resetColor(this)" onclick="navigateTo('index.html')" id="home">Home</button>
+            <button type="button" onmouseover="changeColor(this)" onmouseleave="resetColor(this)" onclick="navigateTo('resume.html')" id="res">Resume</button>
+            <button type="button" onmouseover="changeColor(this)" onmouseleave="resetColor(this)" onclick="navigateTo('projects.html')" id="proj">My Projects</button>
+            <button type="button" onmouseover="changeColor(this)" onmouseleave="resetColor(this)" onclick="navigateTo('about.html')" id="about">About</button>
+            <div id="lineBorder"></div>
+            <div id="mt"></div>
+        </th>
+            <th id="myName">Projects in action...</th>
+        </table>
+    </header>
+
+    <body>
+        <div id="loading-screen">
+        <div id="loading-bar"></div>
+        </div>
+        <div id="image-container">
+        <img src="chip.jpg" alt="Chip Image">
+        </div>
+    </body>
+
+</HTML>

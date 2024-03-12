@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Portfolio</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <script src="action.js"></script>
+    </head>
+
+    //make the snake to follow mouse around the screen through empty spaces
+
+    <body>
+        
+    <header>
+        <table id="menu">
+            <th>
+            <button type="button" onmouseover="changeColor(this)" onmouseleave="resetColor(this)" onclick="navigateTo('index.html')" id="home">Home</button>
+            <button type="button" onmouseover="changeColor(this)" onmouseleave="resetColor(this)" onclick="navigateTo('resume.html')" id="res">Resume</button>
+            <button type="button" onmouseover="changeColor(this)" onmouseleave="resetColor(this)" onclick="navigateTo('projects.html')" id="proj">My Projects</button>
+            <button type="button" onmouseover="changeColor(this)" onmouseleave="resetColor(this)" onclick="navigateTo('about.html')" id="about">About</button>
+            <div id="lineBorder"></div>
+            <div id="mt"></div>
+        </th>
+            <th id="myName">Joshua M. Clark</th>
+        </table>
+    </header>
+
+
+        <div id="bodyBox">
+            <div id="blank"></div>
+            <div id="desc">Hi there! I'm Joshua Clark, a full-time student currently pursuing a degree in Software Development. With a 10-year background in mechanics and a knack for problem-solving, I bring a versatile skill set to the table.</div><br>
+
+            <div id="desc">Beyond coding, I've delved into server administration and network management, gaining valuable experience in both virtual and physical server environments. Whether it's setting up servers or diagnosing network issues, I thrive in environments that demand attention to detail and critical thinking.</div><br>
+        
+            <div id="desc">In addition to my technical skills, I bring a decade of experience in automotive mechanics, where I've developed a keen eye for diagnostics and repair. This hands-on experience has instilled in me a strong work ethic and a commitment to excellence in everything I do.</div><br>
+        
+            <div id="desc">As I continue to pursue my passion for technology, I'm excited about the endless possibilities that lie ahead. Whether it's developing innovative software solutions or creating captivating web experiences, I'm dedicated to pushing boundaries and delivering results that exceed expectations.</div><br>
+        
+            <div id="desc">Let's collaborate and turn your ideas into reality!</div>
+        </div>
+
+            <br>
+            <br>
+        </div>
+        <div id="info">
+
+        <fieldset id="skillSet">
+            <legend id="prog" onmouseover="fieldsetChange" onmouseleave="fieldsetReset">Programming Languages: </legend>
+                <ul>
+                    <table>
+                        <th align="left" width="150px"><li>Python</li>
+                        <li>C++</li>
+                        <li>C#</li>
+                        <li>HTML</li></th>
+                        <th align="left"><li>Shell</li>
+                            <li>mySQL</li><li>CSS</li>
+                            <li>JavaScript</li></th>
+
+                </ul>
+            </table>
+        </fieldset>
+        </div>
+
+        <fieldset id="operating">
+            <legend>Libraries and Tools: </legend>
+                <ul>
+                    <table>
+                        <th align="left" width="150px"><li>Python</li>
+                        <li>Django</li>
+                        <li>NumPy</li>
+                        <li>Active Directory</li>
+                        <li>Wireshark</li><li>Virtualization</li><li id="hideMe"></li><li id="hideMe"></li></th>
+                        <th align="left"><li>Microsoft Office</li>
+                            <li>Photoshop</li><li>Command Line/Terminal</li>
+                            <li>Burp Suite</li><li>VirtualBox</li><li>Communication Protocols (TCP, UDP, HTTPS, SNMP)</li>
+                        </th>
+
+                </ul>
+            </table>
+        </fieldset>
+        </div>
+
+        <fieldset id="hobby">
+            <legend>Hobbies: </legend>
+                <ul>
+                    <table>
+                        <th align="left" width="150px">
+                            <li>Photography</li>
+                            <li>Astronomy</li>
+                            <li>Video Games</li>
+                            <li>Playing Instruments</li></th>
+                </ul>
+            </table>
+        </fieldset>
+        </div>
+
+
+        <div id="phoneScreen">
+            <div id="contact" style="width: 50%;">
+                <button type="button" onclick="toggleContactPage()">
+                    <div id="photo" class="circle-photo" onclick="toggleContactPage()">
+                        <img src="me.jpg" alt="Your Photo" height="100px" width="100px">
+                    </div>
+                </button>
+            <div id="name" style="text-align: center; padding-top: 10px;">Your Name</div>
+        </div>
+
+        <div id="contactPage">
+        <!-- Contact Page Content -->
+            <h2>Contact Information</h2>
+            <p>Name: Josh Clark</p>
+            <p>Email: josh.clark123@yahoo.com</p>
+            <p>Phone: 501-732-1797</p>
+        </div>
+    </div>
+
+    </body>
+
+    
+</HTML>
