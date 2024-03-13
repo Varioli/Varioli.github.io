@@ -4,6 +4,12 @@
 
 }
 
+.container {
+  width: 100%;
+  max-width: 960px; /* optional: set a maximum width for larger screens */
+  margin: 0 auto; /* center the container */
+}
+
 @font-face {
     font-family: 'Abduction2002';
     src: url('abduction2002.ttf') format('truetype');
