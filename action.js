@@ -2,6 +2,8 @@ function navigateTo(url) {
     window.location.href = url;
 }
 
+.alert("This portfolio is still being built, please be patient as content is uploaded and updated :)");
+
 function changeColor(btn) {
     btn.style.backgroundColor = '#363435';
     btn.style.color = '#fdf9f9';
